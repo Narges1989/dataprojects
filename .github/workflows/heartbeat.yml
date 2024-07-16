@@ -1,0 +1,14 @@
+name: Data
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: linero-tech/linero-tech/.github/workflows/autograding-data.yml@v2.1.0
+    with:
+      module_id: d200
+    secrets: inherit
